@@ -1,13 +1,20 @@
-#list-of-stuff{
-background: lightgreen;
+#main-header{
+    color: blue;
 }
 .item {
     background-color: tomato;
     color: blue;
+
 }
 
-.item-cover {
+#list-container{
+    text-align: center;
+}
+#list-of-stuff {
+    text-align: left;
+    width: 400px;
     background-color: tomato;
-    border: 5px black;
-    color: blue;
+    display: inline-block;
+
+
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo list App</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" >
 </head>
 
 <body>
@@ -12,14 +12,16 @@
 <br>
 <h2 id="tasks-list-header" align="center">Tasks list</h2>
 
-<div id="list-of-stuff" class="listStuff" align="center"  >
-    <label for="new-item" id="new-item-label">enter new item:</label>
+<div id="list-container">
+<p id="list-of-stuff" class="list-stuff"   >
+    <label for="new-item">Enter new item:</label>
     <input type="text" id="new-item">
     <input type="button" value="create" label="create">
     <br>
-<p class="itemCover"><input type="checkbox" value="shoes" label="shoes" id="item-1" class="item">buy shoes<br></p>
-    <input type="checkbox" value="cat" label="cat" id="item-2" class="item">feed the cat<br>
-    <input type="checkbox" value="car" label="car" id="item-3" class="item">fix the car<br>
+    <input type="checkbox" value="shoes" id="item-1" class="item"><label for="item-1">buy shoes</label><br>
+    <input type="checkbox" value="cat" id="item-2" class="item"><label for="item-2">feed the cat</label><br>
+    <input type="checkbox" value="car" id="item-3" class="item"><label for="item-3">fix the car</label><br>
+</p>
 </div>
 
 </body>
