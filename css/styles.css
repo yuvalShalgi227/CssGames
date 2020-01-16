@@ -1,0 +1,13 @@
+#list-of-stuff{
+background: lightgreen;
+}
+.item {
+    background-color: tomato;
+    color: blue;
+}
+
+.item-cover {
+    background-color: tomato;
+    border: 5px black;
+    color: blue;
+}
