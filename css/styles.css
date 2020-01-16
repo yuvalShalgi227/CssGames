@@ -4,7 +4,8 @@
 .item {
     background-color: tomato;
     color: blue;
-    display: inline-block
+
+
 
 }
 
@@ -16,24 +17,34 @@
     color: blue;
 }
 .item +label {
-
+    display: inline-block;
     border: black;
+    font-family: sans-serif;
+    font-size: 19px;
 }
 
+
 .item:hover +label {
+
     border: black;
     color: blue;
     background-color: greenyellow;
+
 }
 
+.edit {
+    display: none;
+}
 .side-buttons {
-    display: inline-block;
+    display: none;
     float: right;
     clear: both;
+
 }
 
 #list-container{
     text-align: center;
+
 }
 #list-of-stuff {
     text-align: left;
@@ -42,4 +53,8 @@
     display: inline-block;
 
 
+}
+.row:hover #edit1{
+
+    display: inline-block;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo list App</title>
-    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -13,33 +13,43 @@
 <h2 id="tasks-list-header" align="center">Tasks list</h2>
 
 <div id="list-container">
-<div id="list-of-stuff" class="list-stuff"   >
-    <label for="new-item">Enter new item:</label>
-    <input type="text" id="new-item">
-    <input type="button" value="create" label="create">
-    <br>
-    <input type="checkbox" value="shoes" id="item-1" class="item"><label for="item-1">buy shoes</label>
-    <div class="side-buttons">
-        <input type="button" value="edit" label="create">
-        <input type="button" value="delete" label="create">
+    <div id="list-of-stuff" class="list-stuff">
+        <label for="new-item">Enter new item:</label>
+        <input type="text" id="new-item">
+        <input type="button" value="create" label="create">
+
+
+        <br>
+        <br>
+        <div class="row">
+            <input type="checkbox" value="shoes" id="item-1" class="item"><label for="item-1">buy shoes</label>
+
+
+                <input type="button" value="edit" label="edit" id="edit1" class="edit">
+                <input type="button" value="delete" label="delete">
+
+        </div>
+
+
+        <br>
+        <div class="row">
+            <input type="checkbox" value="cat" id="item-2" class="item"><label for="item-2">feed the cat</label>
+            <div class="side-buttons">
+
+                <input type="button" value="edit" label="edit">
+                <input type="button" value="delete" label="delete">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="checkbox" value="car" id="item-3" class="item"><label for="item-3">fix the car</label>
+            <div class="side-buttons">
+                <input type="button" value="edit" label="edit">
+                <input type="button" value="delete" label="delete">
+            </div>
+
+        </div>
     </div>
-    <br>
-    <br>
-    <input type="checkbox" value="cat" id="item-2" class="item"><label for="item-2">feed the cat</label>
-    <div class="side-buttons">
-        <input type="button" value="edit" label="create">
-        <input type="button" value="delete" label="create">
-    </div>
-    <br>
-    <br>
-    <input type="checkbox" value="car" id="item-3" class="item"><label for="item-3">fix the car</label>
-    <div class="side-buttons">
-        <input type="button" value="edit" label="create">
-        <input type="button" value="delete" label="create">
-    </div>
-    <br>
-    <br>
-</div>
 </div>
 
 </body>
