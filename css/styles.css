@@ -4,7 +4,32 @@
 .item {
     background-color: tomato;
     color: blue;
+    display: inline-block
 
+}
+
+#item-con {
+    display: inline-block
+}
+.item:checked +label {
+
+    color: blue;
+}
+.item +label {
+
+    border: black;
+}
+
+.item:hover +label {
+    border: black;
+    color: blue;
+    background-color: greenyellow;
+}
+
+.side-buttons {
+    display: inline-block;
+    float: right;
+    clear: both;
 }
 
 #list-container{
