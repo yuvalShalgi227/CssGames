@@ -1,9 +1,9 @@
 #main-header{
     color: blue;
 }
-.item {
-    background-color: tomato;
-    color: blue;
+.row {
+
+    padding: 5px;
 
 
 
@@ -19,8 +19,8 @@
 .item +label {
     display: inline-block;
     border: black;
-    font-family: sans-serif;
-    font-size: 19px;
+    font-family:  sans-serif;
+    font-size: 16px;
 }
 
 
@@ -32,9 +32,6 @@
 
 }
 
-.edit {
-    display: none;
-}
 .side-buttons {
     display: none;
     float: right;
@@ -47,14 +44,17 @@
 
 }
 #list-of-stuff {
+
     text-align: left;
     width: 400px;
     background-color: tomato;
     display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
 
 
 }
-.row:hover #edit1{
+.row:hover .side-buttons{
 
     display: inline-block;
 }
