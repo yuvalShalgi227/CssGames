@@ -1,30 +1,40 @@
-#main-header{
+@keyframes colorChange {
+    0% {
+        background: tomato
+    }
+    50% {
+        background: whitesmoke
+    }
+    100% {
+        background: tomato
+    }
+}
+
+#main-header {
     color: blue;
 }
+
 .row {
-
     padding: 5px;
-
-
-
 }
 
 #item-con {
     display: inline-block
 }
-.item:checked +label {
+
+.item:checked + label {
 
     color: blue;
 }
-.item +label {
+
+.item + label {
     display: inline-block;
     border: black;
-    font-family:  sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
 }
 
-
-.item:hover +label {
+.item:hover + label {
 
     border: black;
     color: blue;
@@ -39,12 +49,16 @@
 
 }
 
-#list-container{
+.buttons:hover {
+    color: blue;
+}
+
+#list-container {
     text-align: center;
 
 }
-#list-of-stuff {
 
+#list-of-stuff {
     text-align: left;
     width: 400px;
     background-color: tomato;
@@ -52,9 +66,11 @@
     padding: 10px;
     border-radius: 5px;
 
-
 }
-.row:hover .side-buttons{
 
+.row:hover .side-buttons {
     display: inline-block;
+    animation-name: colorChange;
+    animation-duration: 700ms;
+    padding: 5px;
 }
