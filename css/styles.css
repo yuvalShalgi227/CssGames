@@ -10,6 +10,10 @@
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 #main-header {
     color: blue;
 }
@@ -60,12 +64,20 @@
 
 #list-of-stuff {
     text-align: left;
-    width: 400px;
+    width: 30%;
     background-color: tomato;
     display: inline-block;
     padding: 10px;
     border-radius: 5px;
+}
 
+@media (min-width: 1px) and (max-width: 900px) {
+    #list-of-stuff {
+        width: 45%;
+}
+
+#new-item {
+    width:30%;
 }
 
 .row:hover .side-buttons {
