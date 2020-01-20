@@ -23,8 +23,10 @@
 }
 
 #item-con {
-    display: inline-block
+    display: inline-block;
+
 }
+
 
 .item:checked + label {
 
@@ -51,7 +53,18 @@
     float: right;
     clear: both;
 
+
 }
+.label1 {
+    width: 40%;
+    display: inline-flex;
+}
+
+.buttons {
+    font-size: 90%;
+    float: right;
+}
+
 
 .buttons:hover {
     color: blue;
@@ -73,7 +86,7 @@
 
 @media (min-width: 1px) and (max-width: 900px) {
     #list-of-stuff {
-        width: 45%;
+        width: 85%;
 }}
 
 #new-item {
@@ -82,7 +95,12 @@
 
 .row:hover .side-buttons {
     display: inline-block;
+    font-size: 50%;
     animation-name: colorChange;
     animation-duration: 700ms;
     padding: 5px;
+}
+#new-item-label{
+    display:inline-flex;
+    width: 30%;
 }
