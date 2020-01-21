@@ -1,0 +1,106 @@
+@keyframes colorChange {
+    0% {
+        background: tomato
+    }
+    50% {
+        background: whitesmoke
+    }
+    100% {
+        background: tomato
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#main-header {
+    color: blue;
+}
+
+.row {
+    padding: 5px;
+}
+
+#item-con {
+    display: inline-block;
+
+}
+
+
+.item:checked + label {
+
+    color: blue;
+}
+
+.item + label {
+    display: inline-block;
+    border: black;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.item:hover + label {
+
+    border: black;
+    color: blue;
+    background-color: greenyellow;
+
+}
+
+.side-buttons {
+    display: none;
+    float: right;
+    clear: both;
+
+
+}
+.label1 {
+    width: 40%;
+    display: inline-flex;
+}
+
+.buttons {
+    font-size: 90%;
+    float: right;
+}
+
+
+.buttons:hover {
+    color: blue;
+}
+
+#list-container {
+    text-align: center;
+
+}
+
+#list-of-stuff {
+    text-align: left;
+    width: 30%;
+    background-color: tomato;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (min-width: 1px) and (max-width: 900px) {
+    #list-of-stuff {
+        width: 85%;
+}}
+
+#new-item {
+    width:30%;
+}
+
+.row:hover .side-buttons {
+    display: inline-block;
+    font-size: 50%;
+    animation-name: colorChange;
+    animation-duration: 700ms;
+    padding: 5px;
+}
+#new-item-label{
+    display:inline-flex;
+    width: 30%;
+}

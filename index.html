@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Todo list App</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -11,15 +13,39 @@
 <br>
 <h2 id="tasks-list-header" align="center">Tasks list</h2>
 
-<p id="list-of-stuff" class="list-stuff" align="center"  >
-    <label for="new-item">enter new item:</label>
-    <input type="text" id="new-item">
-    <input type="button" value="create" label="create">
-    <br>
-    <input type="checkbox" value="shoes" id="item-1" class="item"><label for="item-1">buy shoes</label><br>
-    <input type="checkbox" value="cat" id="item-2" class="item"><label for="item-2">feed the cat</label><br>
-    <input type="checkbox" value="car" id="item-3" class="item"><label for="item-3">fix the car</label><br>
-</p>
+<div id="list-container">
+    <div id="list-of-stuff" class="list-stuff">
+        <label for="new-item" id="new-item-label">Enter new item:</label>
+        <input type="text" id="new-item">
+        <input type="button" value="create" label="create">
+        <div class="row">
+            <input type="checkbox" value="shoes" id="item-1" class="item"><label for="item-1" class="label1">Buy shoes</label>
+            <div class="side-buttons">
+
+                <input type="button" value="Edit" label="edit" class="button-edit buttons">
+                <input type="button" value="Delete" label="delete" class="button-del buttons">
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" value="cat" id="item-2" class="item"><label for="item-2" class="label1">Feed the cat</label>
+            <div class="side-buttons">
+
+                <input type="button" value="Edit" label="edit" class="button-edit buttons">
+                <input type="button" value="Delete" label="delete" class="button-del buttons">
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" value="car" id="item-3" class="item"><label for="item-3">Fix the car</label>
+            <div class="side-buttons">
+                <input type="button" value="Edit" label="edit" class="button-edit buttons">
+                <input type="button" value="Delete" label="delete" class="button-del buttons">
+            </div>
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>
