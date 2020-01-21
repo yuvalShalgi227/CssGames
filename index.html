@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Todo list App</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
@@ -14,12 +15,12 @@
 <h2 id="tasks-list-header" align="center">Tasks list</h2>
 
 <div id="list-container">
-    <div id="list-of-stuff" class="list-stuff">
+    <div id="list-of-stuff" class="list-stuff container-fluid">
         <label for="new-item" id="new-item-label">Enter new item:</label>
         <input type="text" id="new-item">
         <input type="button" value="create" label="create">
         <div class="row">
-            <input type="checkbox" value="shoes" id="item-1" class="item"><label for="item-1" class="label1">Buy shoes</label>
+            <input type="checkbox" value="shoes" id="item-1" class="item col-md-4"><label for="item-1" class="label1">Buy shoes</label>
             <div class="side-buttons">
 
                 <input type="button" value="Edit" label="edit" class="button-edit buttons">
@@ -28,7 +29,7 @@
         </div>
 
         <div class="row">
-            <input type="checkbox" value="cat" id="item-2" class="item"><label for="item-2" class="label1">Feed the cat</label>
+            <input type="checkbox" value="cat" id="item-2" class="item col-md-4"><label for="item-2" class="label1">Feed the cat</label>
             <div class="side-buttons">
 
                 <input type="button" value="Edit" label="edit" class="button-edit buttons">
@@ -37,7 +38,7 @@
         </div>
 
         <div class="row">
-            <input type="checkbox" value="car" id="item-3" class="item"><label for="item-3">Fix the car</label>
+            <input type="checkbox" value="car" id="item-3" class="item col-md-4"><label for="item-3">Fix the car</label>
             <div class="side-buttons">
                 <input type="button" value="Edit" label="edit" class="button-edit buttons">
                 <input type="button" value="Delete" label="delete" class="button-del buttons">
@@ -46,6 +47,7 @@
 
     </div>
 </div>
-
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
