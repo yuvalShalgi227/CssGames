@@ -51,6 +51,7 @@
 .side-buttons {
     display: none;
     float: right;
+    text-align: right;
     clear: both;
 
 
@@ -99,6 +100,7 @@
     animation-name: colorChange;
     animation-duration: 700ms;
     padding: 5px;
+    float: right; /*why is align right not working , and why is this comment not one line*/
 }
 #new-item-label{
     display:inline-flex;
