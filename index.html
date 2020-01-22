@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Todo list App</title>
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+<header>
+    <nav id="my-nav" class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="index.html">TASKS</a>
+        </div>
 
+    </div>
+
+    </nav>
+</header>
 <body>
 <h1 id="main-header" align="center">Todo list App</h1>
 <br>
@@ -18,24 +29,26 @@
     <div id="list-of-stuff" class="list-stuff container-fluid">
         <label for="new-item" id="new-item-label">Enter new item:</label>
         <input type="text" id="new-item">
-        <input type="button" value="create" label="create">
+        <input type="button" value="create" >
         <div class="row">
 
-            <input type="checkbox" value="shoes" id="item-1" class="item col-xs-3"><label for="item-1" class="label1">Buy shoes</label>
-            <div class="col-xs-2">
-                <div class="side-buttons">
-                    <div class="col-xs-3">
-                        <input type="button" value="Edit" label="edit" class="button-edit buttons">
-                    </div>
-                    <div class="col-xs-3">
+            <input type="checkbox" value="shoes" id="item-1" class="item col-sm-4"><label for="item-1" class="label1">Buy
+            shoes</label>
+
+            <div class="side-buttons pull-left">
+                <div class="col-xs-3">
+                    <input type="button" value="Edit" label="edit" class="button-edit buttons">
+                </div>
+                <div class="col-xs-3">
                     <input type="button" value="Delete" label="delete" class="button-del buttons">
-                    </div>
                 </div>
             </div>
+
         </div>
 
         <div class="row">
-            <input type="checkbox" value="cat" id="item-2" class="item col-sm-4"><label for="item-2" class="label1">Feed the cat</label>
+            <input type="checkbox" value="cat" id="item-2" class="item col-sm-4"><label for="item-2" class="label1">Feed
+            the cat</label>
             <div class="side-buttons">
 
                 <input type="button" value="Edit" label="edit" class="button-edit buttons">
@@ -44,10 +57,10 @@
         </div>
 
         <div class="row">
-            <input type="checkbox" value="car" id="item-3" class="item col-sm-4"><label for="item-3">Fix the car</label>
-            <div class="side-buttons">
-                <input type="button" value="Edit" label="edit" class="button-edit buttons">
-                <input type="button" value="Delete" label="delete" class="button-del buttons">
+            <input type="checkbox" value="car" id="item-3" class="item col-sm-6"><label for="item-3">Fix the car</label>
+            <div class="side-buttons col-sm-4">
+                <input type="button" value="Edit" label="edit" class="button-edit buttons ">
+                <input type="button" value="Delete" label="delete" class="button-del buttons ">
             </div>
         </div>
 

@@ -76,19 +76,20 @@
 
 }
 
+#my-nav {
+    text-shadow: 1px 1px 1px #222;
+}
+
 #list-of-stuff {
     text-align: left;
     width: 30%;
     background-color: tomato;
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
 }
 
-@media (min-width: 1px) and (max-width: 900px) {
-    #list-of-stuff {
-        width: 85%;
-}}
+
 
 #new-item {
     width:30%;
@@ -96,7 +97,6 @@
 
 .row:hover .side-buttons {
     display: inline-block;
-    font-size: 50%;
     animation-name: colorChange;
     animation-duration: 700ms;
     padding: 5px;
@@ -104,5 +104,5 @@
 }
 #new-item-label{
     display:inline-flex;
-    width: 30%;
+
 }
