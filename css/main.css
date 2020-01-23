@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-  font-family: sans-serif; }
-
 @keyframes colorChange {
   0% {
     background: tomato; }
@@ -9,6 +5,10 @@
     background: whitesmoke; }
   100% {
     background: tomato; } }
+* {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
 #main-header {
   color: blue; }
 

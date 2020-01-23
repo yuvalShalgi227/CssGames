@@ -1,17 +1,7 @@
 
 @import "vars";
 @import "reset";
-@keyframes colorChange {
-  0% {
-    background: tomato
-  }
-  50% {
-    background: whitesmoke
-  }
-  100% {
-    background: tomato
-  }
-}
+
 @mixin simple-style {
   display: inline-block;
   padding: map-get($my-padding,mid);
