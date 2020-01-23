@@ -1,21 +1,36 @@
 
 @import "vars";
 @import "reset";
-#main-header {
-  color: #000;
+@keyframes colorChange {
+  0% {
+    background: tomato
+  }
+  50% {
+    background: whitesmoke
+  }
+  100% {
+    background: tomato
+  }
+}
+@mixin simple-style {
+  display: inline-block;
+  padding: map-get($my-padding,mid);
+  border: black;
+}
 
-  /*color: map-get($mycolors,highlight);*/
+#main-header {
+  color: map-get($mycolors,highlight);
 }
 
 #list-container {
   text-align: center;
 
   #list-of-stuff {
+    @include simple-style;
     text-align: left;
     width:  map-get($my-percent,third);
     background-color: map-get($mycolors,background);
-    display: inline-block;
-    padding: map-get($my-padding,mid);
+
     border-radius: map-get($my-padding,slim);
 
     #new-item {
@@ -23,25 +38,35 @@
     }
     .row {
       padding: map-get($my-padding,slim);
+      .side-buttons {
+        display: none;//buttons are not shown by default
+        float: right;
+        clear: both;
+      }
+
+      &:hover .side-buttons{ //hover over make side button shown
+        font-size: 50%;
+        animation-name: colorChange;
+        animation-duration: 700ms;
+        @include simple-style
+      }
 
       .item {
           + label {
-            display: inline-block;
-            border: black;
-            font-family: sans-serif;
+            @include simple-style;
             font-size: map-get($my-font,normal);
             }
           &:hover +label{
-            display: inline-block;
-            border: black;
-            font-family: sans-serif;
+            @include simple-style;
+
             font-size: map-get($my-font,normal);
+            background-color: greenyellow;
 
           }
           &:checked {
             border: black;
             color: blue;
-            background-color: greenyellow;
+
           }
       }
     }
