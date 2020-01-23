@@ -1,0 +1,49 @@
+
+@import "vars";
+@import "reset";
+#main-header {
+  color: #000;
+
+  /*color: map-get($mycolors,highlight);*/
+}
+
+#list-container {
+  text-align: center;
+
+  #list-of-stuff {
+    text-align: left;
+    width:  map-get($my-percent,third);
+    background-color: map-get($mycolors,background);
+    display: inline-block;
+    padding: map-get($my-padding,mid);
+    border-radius: map-get($my-padding,slim);
+
+    #new-item {
+      width: map-get($my-padding,mid);
+    }
+    .row {
+      padding: map-get($my-padding,slim);
+
+      .item {
+          + label {
+            display: inline-block;
+            border: black;
+            font-family: sans-serif;
+            font-size: map-get($my-font,normal);
+            }
+          &:hover +label{
+            display: inline-block;
+            border: black;
+            font-family: sans-serif;
+            font-size: map-get($my-font,normal);
+
+          }
+          &:checked {
+            border: black;
+            color: blue;
+            background-color: greenyellow;
+          }
+      }
+    }
+  }
+}
