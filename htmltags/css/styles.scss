@@ -1,0 +1,78 @@
+$padding-text: ("light": 5px, "mid": 10px ,"xl":50px);
+$margin: ("md": 20px, "lg":40px);
+$bg-colors: ("blueish": #7FDBFF, "grinish":#39CCCC, "offwhite":#e6ffff, "teal" : #17a2b8, "grey-green":#0f6674,  "disabled" :#6c757d);
+$custom-width: ("mid": 35%);
+$text-size:("mid": 18px);
+
+//.color-primary-0 { color: #9FB1D6 }	/* Main Primary color */
+//.color-primary-1 { color: #F1F5FC }
+//.color-primary-2 { color: #CCD7ED }
+//.color-primary-3 { color: #7189B8 }
+//.color-primary-4 { color: #4A6599 }
+
+* {
+  font-family: sans-serif;
+}
+html ,main, #body {
+  background-color: map-get($bg-colors,"offwhite");
+
+}
+#my-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height : map-get($padding-text,"xl");
+  background-color: map-get($bg-colors,grinish);
+  color: white;
+  text-align: center;
+}
+
+#header-container {
+  padding: map-get($padding-text, mid);
+}
+#main-container {
+  width: map-get($custom-width,mid);
+  border-radius: map-get($padding-text, mid);
+  background-color: map-get($bg-colors,blueish);
+  padding: map-get($padding-text, xl);
+  box-shadow: 1px 1px 1px #0f6674;
+}
+
+.navbar-arg {
+  background-color: map-get($bg-colors,teal);
+
+}
+#test {
+  a {
+   color: #86cfda;
+    &.disabled {
+      pointer-events: none;
+      cursor: default;
+      color: map-get($bg-colors,disabled);
+      text-decoration: line-through;
+    }
+  }
+  .active a {
+
+      background-color: map-get($bg-colors, grey-green);
+
+  }
+}
+
+article {
+  font-size: map-get($text-size,mid);
+
+}
+#list-of-stuff{
+  margin-top: map-get($padding-text,md);
+  margin-left: map-get($padding-text,lg);
+}
+//#test li a {
+//  color: black;
+//
+//  .active:focus {
+//  background-color: #0f6674;
+//    text-shadow: black;
+//  }
+//}

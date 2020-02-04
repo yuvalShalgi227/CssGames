@@ -1,0 +1,40 @@
+* {
+  font-family: sans-serif; }
+
+html, main, #body {
+  background-color: #e6ffff; }
+
+#my-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #39CCCC;
+  color: white;
+  text-align: center; }
+
+#header-container {
+  padding: 10px; }
+
+#main-container {
+  width: 35%;
+  border-radius: 10px;
+  background-color: #7FDBFF;
+  padding: 50px;
+  box-shadow: 1px 1px 1px #0f6674; }
+
+#test a {
+  color: #86cfda; }
+  #test a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #6c757d;
+    text-decoration: line-through; }
+#test .active a {
+  background-color: #0f6674; }
+
+article {
+  font-size: 18px; }
+
+/*# sourceMappingURL=styles.css.map */
